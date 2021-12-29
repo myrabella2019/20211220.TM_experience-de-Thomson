@@ -1,0 +1,83 @@
+\documentclass[14pt]{article}
+\usepackage{layout} 
+% Affiche les marges des pages
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage[]{tikz}
+\usepackage[document]{ragged2e}
+\usepackage{times}
+\usepackage[utf8]{inputenc}
+\usepackage{systeme}
+\usepackage{hyphenat}
+\usepackage{geometry}
+
+\usepackage{enumerate}
+ \geometry{
+    a4paper,
+    total={170mm,257mm},
+    left=20mm,
+    right=15mm, 
+    top=10mm
+}
+ \usepackage{lscape}
+ \usepackage{xcolor}
+ \usepackage{tkz-tab}
+% Affiche les marges des pages
+\linespread {1.2} % Interlines
+\setlength{\parindent}{4em}
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{2.0}
+\usepackage{longtable}
+\reversemarginpar
+\vspace{.2in}
+\usepackage{tikz}
+% \usepackage{pgfplots}
+% \pgfplotsset{compat = newest}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{tabularx}
+\usepackage{amssymb}
+\usepackage{setspace}
+\doublespacing
+\usetikzlibrary{arrows,positioning,shapes,fit,calc}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+    
+
+\usepackage{graphicx}
+\graphicspath{images/}
+%\graphicspath{{\subfix{../images/}}
+\usepackage{blindtext}
+\usepackage{subfiles} % Best loaded last in the preamble
+
+\title{ Started on 20211220 \\ TM Experience de JJ Thomson}
+\author{Mejda \& J.J. Thomson's experiments }
+\date{December 24th 2021}
+
+\begin{document}
+
+\maketitle
+\subfile{sections/06.texte_livre_chimie}
+%\subfile{sections/livre_physique}
+
+
+ \begin{figure}[bh]
+ \graphicspath{{\subfix{../images/}}
+        \centering
+        \includegraphics[width=7cm]{00.JJ-THOSON} \\
+        \includegraphics[width=7cm]{00.JJ-THOSON-LAB} \\
+        \includegraphics[width=7cm]{01.JJ-THOSON-LAB} \\
+        \label{fig:img1}
+        \caption{Lived 1856 – 1940. }
+    \end{figure}
+
+\end{document}

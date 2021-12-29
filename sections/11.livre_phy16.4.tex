@@ -1,0 +1,62 @@
+\documentclass[../main.tex]{subfiles}
+\graphicspath{{\subfix{../images/}}}
+\begin{document}
+\section{16.4 - Le potentiel électrique}
+Les forces électriques entre charges au repos sont conservatives car elles ont la même forme mathématique que les forces gravitationnelles (chapitre 6). Leurs effets peuvent donc être inclus dans l'énergie potentielle du système considéré. Quand on déplace une charge dans un champ électrique, son énergie potentielle élecrtique varie. Nous allons maintenant introduire le concept de potentiel électrique ou tout simplement le potentiel, qui est l'énergie potentielle électrique que posèsde un objet chargé par unité de charge. \\
+\par Supposons qu'une \textit{q} possède, en un point déterminé, une énergie potentielle \textit{U. Alors, le potentiel électrique V, en ce point, est défini comme étant l'énergie potentielle divisée par la charge,\\
+
+$$V = \frac{U}{q}$$}\\
+
+L'unité de potentiel est le volt (V), où, d'après cette définition, 1 volt = 1 joule par coulomb. (Ne pas confondre l'abréviation standard V pour volt avec le symbole V utilisé pour le potentiel). En langage familier, on appelle souvent \textit{voltages} les différences de potentiel. Nous verrons au chapitre suivant que ce sont les potentiels plutôt que les champs qui sont les plus utiles pour discuter les circuits électriques.\\
+\par Nous avons vu au chapitre 6, que l'on peut résoudre très rapidement de nombreux problèmes de mécanique si on connaît  les énergies potentielles en deux points. De façon similaire, si nous connaissons la différence de potentiel entre deux points, nous pouvons faire un grand nombre de prédiction sur le mouvement de particules chargées sans utiliser d'informations détaillées sur les forces ou les champs électriques. Ceci est illustré par l'exemple suivant.\\
+\subsection{Exemple 16.4}
+Dans le tube à rayon cathodique d'un oscilloscope ou d'un poste télévision, les électrons sont accélérés, à partir du repos, par une différence de potentiel de +20 000 V. Quelle est leur vitesse ? (La masse de l'électron est $9.11 \times 10^{-31}$ kg et la charge est $-e = -1.6 \times 10^{-19}$C.) \\
+\subsubsection{Réponse}
+De la définition du potentiel électrique, on tire la modifiction d'énergie potentielle,\\
+$$\Delta U = q\Delta V = (-e)\Delta V,$$\\
+où $\Delta V = 20 000$V. Ensuite, la conservation de l'énergie donne\\
+$$\frac{1}{2}mv^2 = e\Delta V$$\\
+Ainsi,\\
+$$v = \sqrt{\frac{2e\Delta V}{m}}$$\\
+$$= \sqrt{\frac{2(1.60 \times 10^{-19}C)(20 000V)}{9.11 \times 10^{-31}kg}}$$\\
+$= 8.38 \times 10^7 ms^{-1}$\\
+\par Il est souvent très commode d'exprimer les énergies d'électrons ou d'autres particules en unités d'\textit{électron-volts(eV)}. Un électron-volt est l'énergie cinétique gagnée quand une charge \textit{e} est accélérée par une différence de potentiel d'un volt.\\
+$$1eV = (1.60 \times 10^{-19}C)(1 V)$$\\
+$$= 1.60 \times 10^{-19} J$$\\
+Par exemple, quand un électron est accéléré par une différence de potentiel de 20 000 V, il acquiert une énergie cinétique de 20 000 eV, ou de \\
+$$(20 000 eV)\frac{1.60 \times 10^{-19J}}{1eV} = 3.2 \times 10^{-15}J$$\\
+Nous ferons un large usage de l'électron-volt et des multiples de cette unité dans notre étude des phénomènes atomiques et moléculaires, lors de chapitres ultérieurs.\\
+\par Nous pouvons trouver une relation entre le potentiel électrique et le champ en considérant une charge positive \textit{q} dans un champ électrique uniforme \textbf{E} (figure 16.13). Supposons qu'une force \textbf{F}, égale mais opposée à la force électrique\textit{q}\textbf{E}, soit appliquée à la charge considérée, de sorte qu'elle se déplace de A à B à vitesse constante. Quand la charge parcourt une distance \textit{l} en sens opposé au champ, la force appliquée effectue un travail $Fl = qEl$. Puisque l'énergie cinétique reste constante, ce travail doit être égal à la variation d'énergie potentielle de la charge : \\
+$$\Delta U = qEl$$\\
+En divisant par \textit{q}, nous obtenons la variation de potentiel électrique,\\
+$$\Delta V = El$$\\
+\subsubsection*{Figure 16.13}
+Quand une charge positive \textit{q} es déplacée de A à B en sens opposé au champ, son énergie potentielle augmente de $\Delta U = q\Delta V = qEl$\\
+L'énergie potentielle d'une charge \textit{positive} augmente quand on la déplace dans le sens \textit{opposé} au champ, exactement comme l'énergie potentielle d'une masse augmente quand on effectue un déplacement dans le sens opposé à la force de gravitation, c'est-à-dire quand on l'amène à une hauteur supérieure. Comme la force électrique sur une charge négative est opposée au champ, l'énergie potentielle de cette charge augmente quand elle se déplace dans le sens du champ.\\
+\par Observons que, d'après l'équation (16.9), les unités du champ électrique sont celles de $\Delta V/l$, ou des volts par mètre. Donc le champ peut être mesuré soit en newtons par coulomb $(NC^{-1})$ soit en volts par mètre $(Vm^{-1})$.\\
+\subsubsection*{Figure 16.14}
+La différence de potentiel entre les plaques est $\Delta V = El$. La plaque chargée positivement est au potentiel supérieur, puisque l'on doit effectuer un travail contre le champ pour déplacer une charge positive \textit{+q} de la plaque négative à la plaque positive.\\
+\par Nous avons vu au paragraphe précédent que le champ entre deux plaques portant des charges de signes opposés est uniforme. Si la surface des plaques est \textit{A} et que les charges sont \textit{+Q} et \textit{-Q}, le champ dans le vide vaut en grandeur $Q/\epsilon_0A$. Donc, si $l$ désigne la distance les séparant (figure 16.14), la différence de potentiel entre ces plaques vaut $\Delta V = El$, ou\\
+$$\Delta V = \frac{Q}{\epsilon_0A}l$$\\
+(plaques avec des charges de signes opposés)\\
+
+La plaque positive est à un potentiel plus élevé. Ce résultat est illustré par l'exemple suivant.\\
+\subsection{Exemple 16.5}
+Deux plaques parallèles dans le vide portant des charges de signes opposés ont une surface de 1 $m^2$ et sont distantes de 0.01 m. La différence de potentiel entre les plaques est 100 V. Trouver :\\
+\begin{enumerate}[a)]
+    \item le champ entre les plaques et 
+    \item l'importance de la charge d'une plaque 
+\end{enumerate}
+\subsubsection{Réponse}
+\begin{enumerate}
+    \item Comme le champ est uniforme, on peut utiliser $\Delta V = El$ et \\
+    $$E = \frac{\Delta V}{l} = \frac{100 V}{0.01 m} = 10^4 Vm^{-1}$$\\
+    Le champ est dirigé de la plaque positive vers la plaque négative.
+    \item En utilisant l'équation (16.10), on trouve que la charge sur une lame vaut\\
+    $$Q = \frac{\epsilon_0A\Delta V}{l} = \frac{8.85*10^{-12 \times 1 \times 100}}{10^{-2}}$$
+    \\
+    $= 8.88 \times 10^{-8}C$\\
+    Remarquer qu'il suffit d'une faible charge pour produire une différence de potentiel de 100 V.
+\end{enumerate}
+\par Une énergie potentielle de quelque nature qu'elle soit, dépend seulement de la position de l'objet et non de la façon dont il y est arrivé. En d'autres termes, le travail effectué par la force électrique conservative est indépendant du chemin suivi entre les positions intiale et finale. Par conséquent, nous pouvons obtenir la différence de potentiel entre deux points, en utilisant n'importe quel chemin qui soit commode pour obtenir le travail par unité de charge effectué contre le champ électrique. Par exemple, 
+\end{document}
