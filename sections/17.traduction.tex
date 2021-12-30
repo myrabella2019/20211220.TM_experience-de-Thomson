@@ -71,12 +71,12 @@ En utilisant l'équation (5), nous pouvons maintenant déterminer le rapport e/m
     \item Mettez en marche les deux alimentations haute tension.  \textbf{Remarque : l'une des alimentations haute tension fournit une tension à la fois au canon à électrons (HV) et au filament (6VAC), (c'est-à-dire à la lampe à incandescence qui fournit la source d'électrons). }
     \item Réglez le potentiel du "canon à électrons" à l'aide du bouton grossier jusqu'à ce que la tension se situe entre 2000 et 3000 volts. 
     \item Ajustez ensuite le potentiel de la "grille de déviation" à l'aide du bouton grossier jusqu'à ce que la déviation soit proche du maximum (environ 2,5 cm dans la direction des y pour 10 cm dans la direction des x).  
-    \item Enregistrez la tension du canon à électrons :     ________________ volts.  
-    \item Enregistrez la tension de la grille :   _________ volts (V) et son incertitude ____________ volts (δV).  
-    \item Calculez le champ électrique (E) :  $E=V/d$ _________________ V/m et son incertitude ______________ V/m.  \textit{(Voir la section sur l'analyse des erreurs)}
-    \item Enregistrez la déviation (\textit{y}) :   __________ m et son incertitude ________________ m.\\ Enregistrez la longueur (\textit{L}) :   _____________ m et son incertitude ________________ m. 
+    \item Enregistrez la tension du canon à électrons :... volts.  
+    \item Enregistrez la tension de la grille : ....volts (V) et son incertitude .... volts (δV).  
+    \item Calculez le champ électrique (E) :  $E=V/d$ .... V/m et son incertitude .... V/m.  \textit{(Voir la section sur l'analyse des erreurs)}
+    \item Enregistrez la déviation (\textit{y}) : .... m et son incertitude ....m.\\ Enregistrez la longueur (\textit{L}) :   .... m et son incertitude .... m. 
     \item Ajustez le courant dans les bobines de Helmholtz jusqu'à ce que la déviation soit nulle.  Relever le courant sur l'ampèremètre.  
-    \item Enregistrez le courant dans l'aimant :       ____________ A et son incertitude _______________ A. \\
+    \item Enregistrez le courant dans l'aimant : ... A et son incertitude ... A. \\
 Afin de calculer le champ magnétique, utilisez l'équation suivante pour le champ B dans une bobine de Helmholtz :\\ $$B = \frac{8n \cdot I \mu_o}{5 \sqrt{5} \cdot a} [tesla]$$
 où\\
 \begin{enumerate}
@@ -87,10 +87,10 @@ où\\
     \item B = champ magnétique (tesla) \\
     Remarque : 1 tesla = 1 weber / mètre$^2$. 
 \end{enumerate}
-\item Calculez le champ magnétique (B).                _____________ tesla.  Calculez l'incertitude du champ magnétique _____________ tesla.  
-\item Calculer la vitesse des électrons en utilisant $v_x = E/B$                ________________ m/s.
-\item Calculez le rapport e/m.     ________________ C/kg.  
-\item Calculer l'incertitude sur le rapport e/m :     ________________ C/kg. 
+\item Calculez le champ magnétique (B). .... tesla.  Calculez l'incertitude du champ magnétique ..... tesla.  
+\item Calculer la vitesse des électrons en utilisant $v_x = E/B$.... m/s.
+\item Calculez le rapport e/m. ... C/kg.  
+\item Calculer l'incertitude sur le rapport e/m : .... C/kg. 
 \end{enumerate}
 \subsubsection{Question #1}
 Comment le rapport e/m calculé à partir de cette expérience se compare-t-il à la valeur connue de e/m ?  \subsubsection{Question n°2}
@@ -115,7 +115,8 @@ où les incertitudes relatives des quantités mesurées sont additionnées en qu
 La réponse finale doit être citée comme suit :\\
 $$e/m = (e/m)_{calculée} +- \delta(e/m)$$
  \subsection{Le champ magnétique}
-Le champ magnétique pour l'une des deux bobines de Helmholtz peut être écrit à l'aide de la loi de Biot-Savart : ! Bz=nI "10#7a(a#rcos$) d$a2+b2+r2#2arcos$()3202%& (8) où n est le nombre de spires, a est le rayon de la bobine (mètres), b est la distance par rapport au plan de la bobine (mètres) et r est la distance par rapport à l'axe de symétrie (perpendiculaire au plan de la bobine et passant par le centre de la bobine).  Toutes les bobines de Helmholtz sont orientées de telle sorte que la séparation entre les deux bobines est a (le rayon d'une bobine individuelle).  À cette distance, le champ magnétique dans le plan médian entre les deux bobines (c'est-à-dire à b = a/2) est très homogène.  Ceci est illustré dans la figure ci-dessous.  Cependant, à mesure que l'on s'éloigne de l'axe de symétrie (r=0) et que l'on se rapproche du rayon de la bobine de Helmholtz (r → 0,068 mètre), on observe que le champ magnétique diminue rapidement.    B (tesla)r (mètres) Champ magnétique en fonction de r La figure ci-dessus montre le champ magnétique (B en tesla) dans le plan médian entre les deux bobines en fonction de r (la distance à l'axe de symétrie) pour n = 320 tours, i = 170 mA et b = a/2, où a = 0,068 mètres.    Si vous prenez l'équation ci-dessus pour Bz (éq. 8), que vous définissez b = a/2 et r = 0, que vous l'intégrez et que vous la multipliez par deux (parce qu'il y a deux bobines), vous obtiendrez l'équation B=32!n55Ia "10#7 (tesla) comme indiqué ci-dessus (éq. 6). 
+Le champ magnétique pour l'une des deux bobines de Helmholtz peut être écrit à l'aide de la loi de Biot-Savart :\\
+$$B_z = nI \times 10^{-7}\int_0^{2\pi}\frac{a(a -rcos\theta) d\theta}{(a^2 + b^2 + r^2 - 2arcos\theta)^{3/2}}$$ où n est le nombre de spires, a est le rayon de la bobine (mètres), b est la distance par rapport au plan de la bobine (mètres) et r est la distance par rapport à l'axe de symétrie (perpendiculaire au plan de la bobine et passant par le centre de la bobine).  Toutes les bobines de Helmholtz sont orientées de telle sorte que la séparation entre les deux bobines est a (le rayon d'une bobine individuelle).  À cette distance, le champ magnétique dans le plan médian entre les deux bobines (c'est-à-dire à b = a/2) est très homogène.  Ceci est illustré dans la figure ci-dessous.  Cependant, à mesure que l'on s'éloigne de l'axe de symétrie (r=0) et que l'on se rapproche du rayon de la bobine de Helmholtz (r → 0,068 mètre), on observe que le champ magnétique diminue rapidement.    B (tesla)r (mètres) Champ magnétique en fonction de r La figure ci-dessus montre le champ magnétique (B en tesla) dans le plan médian entre les deux bobines en fonction de r (la distance à l'axe de symétrie) pour n = 320 tours, i = 170 mA et b = a/2, où a = 0,068 mètres.    Si vous prenez l'équation ci-dessus pour Bz (éq. 8), que vous définissez b = a/2 et r = 0, que vous l'intégrez et que vous la multipliez par deux (parce qu'il y a deux bobines), vous obtiendrez l'équation B=32!n55Ia "10#7 (tesla) comme indiqué ci-dessus (éq. 6). 
 
 Traduit avec www.DeepL.com/Translator (version gratuite)
 Traduit avec DeepL (deepl.com)
