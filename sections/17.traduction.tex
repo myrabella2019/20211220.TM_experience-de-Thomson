@@ -23,7 +23,9 @@ Des voltmètres et des ampèremètres pour : \\
     \item surveiller le courant dans le champ magnétique (bobines de Helmholtz).
 \end{enumerate}
 \subsection{Méthode}
-Premièrement, accélérer les électrons à travers le "canon à électrons".  Deuxièmement, les dévier à l'aide d'un champ électrique constant.  Troisièmement, régler le courant dans l'aimant (bobines de Helmholtz) pour produire une déviation nulle du faisceau d'électrons.  Le vecteur du champ magnétique, B, doit être perpendiculaire à la fois à v (la vitesse des électrons) et à E (le champ électrique).\\
+Premièrement, accélérer les électrons à travers le "canon à électrons".  \\
+Deuxièmement, les dévier à l'aide d'un champ électrique constant.  
+Troisièmement, régler le courant dans l'aimant (bobines de Helmholtz) pour produire une déviation nulle du faisceau d'électrons.  Le vecteur du champ magnétique, B, doit être perpendiculaire à la fois à v (la vitesse des électrons) et à E (le champ électrique).\\
 \par En utilisant les mesures des champs électrique et magnétique, ainsi que les mesures géométriques de la trajectoire, le rapport e/m de l'électron peut être calculé.
 \subsection{Théorie}
 Si l'électron est une particule de charge finie e et de masse m, il obéit aux lois du mouvement. \\
@@ -32,7 +34,7 @@ $$\frac{1}{2}mv^2 = qV$$\\
 où :\\
 \begin{enumerate}
     \item v est la vitesse dans la direction x, 
-    \item q est la charge de l'électron, et 
+    \item q est la charge de l'électron \unit{\coulomb }\\, et 
     \item V est la différence de potentiel. 
 \end{enumerate}
 Si la vitesse des électrons sortant du canon est connue, le rapport e/m peut être calculé en utilisant l'équation ci-dessus (1) où $q = e$ .\\
@@ -72,7 +74,7 @@ En utilisant l'équation (5), nous pouvons maintenant déterminer le rapport e/m
     \item Réglez le potentiel du "canon à électrons" à l'aide du bouton grossier jusqu'à ce que la tension se situe entre 2000 et 3000 volts. 
     \item Ajustez ensuite le potentiel de la "grille de déviation" à l'aide du bouton grossier jusqu'à ce que la déviation soit proche du maximum (environ 2,5 cm dans la direction des y pour 10 cm dans la direction des x).  
     \item Enregistrez la tension du canon à électrons :... volts.  
-    \item Enregistrez la tension de la grille : ....volts (V) et son incertitude .... volts (δV).  
+    \item Enregistrez la tension de la grille : ....\volts (V) et son incertitude .... \volts (δV).  
     \item Calculez le champ électrique (E) :  $E=V/d$ .... V/m et son incertitude .... V/m.  \textit{(Voir la section sur l'analyse des erreurs)}
     \item Enregistrez la déviation (\textit{y}) : .... m et son incertitude ....m.\\ Enregistrez la longueur (\textit{L}) :   .... m et son incertitude .... m. 
     \item Ajustez le courant dans les bobines de Helmholtz jusqu'à ce que la déviation soit nulle.  Relever le courant sur l'ampèremètre.  
@@ -107,8 +109,9 @@ où V est le potentiel (volts) et \textit{d} est la séparation entre les plaque
 $$\frac{\delta E}{E} = \sqrt{(\frac{\delta V}{V})^2 + (\frac{\delta d}{d})^2}$$
 où les incertitudes relatives du potentiel et de la séparation sont ajoutées en quadrature.\\
 Lorsque vous donnez votre réponse pour e/m (le rapport charge-masse), vous devez indiquer à la fois la valeur moyenne et l'incertitude.  L'équation permettant de calculer la valeur moyenne de e/m est la suivante :\\
-$$\frac{e}{m} = \frac{2Ey}{B^2L^2}$$
-où B est le champ magnétique (tesla), E est le champ électrique (volts/mètre), y est le déplacement (mètres) et L est la longueur de la grille de déviation (mètres).\\
+$$\frac{e}{m} = \frac{2Ey}{B^2L^2}$$ \\
+où  $\vectorbold*{\va{B}} \textit{ : est le champ magnétique ( tesla )}$,  \\ 
+$ \vectorbold*{\va{E}}  \textit{ : est le champ électrique ( volts / mètre)}$, \\ y est le déplacement (mètres) et L est la longueur de la grille de déviation (mètres).\\
 Pour déterminer l'incertitude de e/m, vous devez d'abord calculer l'incertitude relative de e/m.\\
 $$\frac{\delta (e/m)}{e/m} = \sqrt{(\frac{\delta y}{y})^2 + (\frac{\delta E}{E})^2 + (\frac{2 \delta B}{B})^2 +(\frac{2 \delta L}{L})^2 }$$
 où les incertitudes relatives des quantités mesurées sont additionnées en quadrature.\\
@@ -143,9 +146,23 @@ Il s'agit également de la disposition transversale du faisceau et du champ. Le 
 \subsection{Théorie}
 \subsubsection{Faisceaux d'électrons accélérés}
 Pour des raisons de simplicité, nous considérons que l'électron a une charge positive e, et ajustons les relations en conséquence. Avec UA la tension d'accélération entre la cathode et l'anode du canon à électrons, la vitesse de l'électron de charge e peut être calculée à partir de la conservation de l'énergie : l'énergie potentielle électrique dispensée entre la cathode et l'anode doit être égale à l'énergie cinétique gagnée par un électron lorsqu'il quitte le canon par l'ouverture de l'anode.\\
+$$\frac{1}{2}m \cdot v^2 = e \cdot U_A$$\\
+En résolvant la vitesse v, on a : \\
+$$v = \sqrt{\frac{2e \cdot U_A}{m}}$$
+Dans des limites étroites, qui dépendent des processus statistiques impliqués dans l'émission thermique à la cathode, et des champs parasites dans le canon à électrons, tous les électrons du faisceau auront approximativement la même vitesse. 
+\subsubsection{ Mouvement d'un électron dans un champ magnétique homogène et perpendiculaire}
+Pour que le faisceau d'électrons se déplace dans un champ homogène $\overrightarrow{B}$, le tube sphérique est placé symétriquement entre les bobines d'un couple de Helmholtz, dont les axes communs passent par le centre du tube, de sorte que le champ soit perpendiculaire au faisceau d'électrons. Une charge e avec une vitesse v se déplaçant dans le champ $\overrightarrow{B}$, est soumise à la force de Lorentz $\overrightarrow{F_L} = e \cdot \overrightarrow{v} \times \overrightarrow{B}$.La force est toujours perpendiculaire à la propagation de l'électron et donc aucun travail n'est effectué et aucune énergie cinétique n'est perdue ou gagnée.\\
+\par 
+Pour le cas particulier d'un électron se déplaçant à la vitesse vs perpendiculairement aux lignes de champ d'un champ homogène $\overrightarrow{B}$, la magnitude de la force de Lorentz est $F_L = e \cdot \cdot v_S \cdot B$ constante. La trajectoire de l'électron devient un cercle de rayon r :
+$$\frac{m \cdot v_S^2}{r} = e \cdot v_S \cdot B$$
+ou explicitement : \\
+$$r = \frac{v_S}{(e/m) \cdot B}$$
+The time T required for one complete turn in the circle is accordingly:
+$$T = \frac{2 \pi r}{v_S} = \frac{2 \pi}{(e/m) \cdot B}$$
 
-Traduit avec www.DeepL.com/Translator (version gratuite)
-Traduit avec www.DeepL.com/Translator (version gratuite)
+qui est apparemment indépendante de la vitesse de l'électron. Pour illustrer ceci, nous pouvons imaginer trois électrons dans un plan perpendiculaire à un champ $\overrightarrow{B}$, voir Fig. 4.2. Les électrons partent du point commun P au temps t = 0, mais dans des directions différentes et à des vitesses différentes. L'équation 4.4 nous dit que les électrons suivent des trajectoires circulaires avec des rayons différents et l'équation 4.5 qu'ils ont tous besoin du même temps T pour faire un tour complet du cercle, et se retrouvent au point P au même moment t = T plus tard. Puisque FL =e-v× B, la force de Lorentz disparaît pour les électrons se déplaçant de façon strictement parallèle aux lignes de champ. Dans ce cas, il n'y aurait aucune interaction avec le champ qui pourrait être utilisée pour déterminer e/m. Si, par contre, l'électron se déplace avec une vitesse v selon un certain angle ϕ par rapport à la direction d'un champ homogène, la décomposition de v en composantes parallèles et perpendiculaires au champ nous permet d'élaborer une méthode de détermination de e/m. Aucune force de Lorentz n'agit sur la composante vp = v-cosϕ parallèle aux lignes de champ, et par conséquent la composante vp de l'électron reste inchangée.
+
+
 \end{document}
 
  

@@ -39,6 +39,8 @@
 \usepackage{amsfonts}
 \usepackage{tabularx}
 \usepackage{amssymb}
+\usepackage{physics}
+\usepackage{siunitx}[=2021-04-09]
 \usepackage{setspace}
 \doublespacing
 \usetikzlibrary{arrows,positioning,shapes,fit,calc}
@@ -51,33 +53,30 @@
     pdftitle={Overleaf Example},
     pdfpagemode=FullScreen,
     }
-    
-
-\usepackage{graphicx}
+    \usepackage{graphicx}
 \graphicspath{images/}
-%\graphicspath{{\subfix{../images/}}
+
+\graphicspath{{\subfix{../images/}}} 
+
 \usepackage{blindtext}
 \usepackage{subfiles} % Best loaded last in the preamble
 
-\title{ Started on 20211220 \\ TM Experience de JJ Thomson}
+\title{ Started on 2021.12.20 \\ TM Experience de JJ Thomson}
 \author{Mejda \& J.J. Thomson's experiments }
 \date{December 24th 2021}
 
 \begin{document}
 
 \maketitle
-\subfile{sections/06.texte_livre_chimie}
-%\subfile{sections/livre_physique}
-
-
- \begin{figure}[bh]
- \graphicspath{{\subfix{../images/}}
+\begin{figure}[bh] 
         \centering
-        \includegraphics[width=7cm]{00.JJ-THOSON} \\
-        \includegraphics[width=7cm]{00.JJ-THOSON-LAB} \\
-        \includegraphics[width=7cm]{01.JJ-THOSON-LAB} \\
+        \includegraphics[width=4cm]{00.JJ-THOMSON-TUBE} 
+        \includegraphics[width=4cm]{00.JJ-THOMSON-LAB-WIDE}
+        \includegraphics[width=4cm]{01.JJ-THOMSON-LAB-THIN}
         \label{fig:img1}
         \caption{Lived 1856 – 1940. }
     \end{figure}
 
+\subfile{sections/06.texte_livre_chimie}
+%\subfile{sections/livre_physique}
 \end{document}
